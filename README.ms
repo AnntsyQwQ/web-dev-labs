@@ -1,3 +1,5 @@
+Jesus always saves
 Wag kalimutan mag git add .
-saka mag git commit
-then publish
+Saka mag git commit
+Then sync changes
+Then boom!
