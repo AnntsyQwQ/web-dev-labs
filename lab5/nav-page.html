@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Sigay Cafe</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f7f3ed; }
+        header { background-color: #e7cba9; text-align: center; padding: 32px 0 18px 0; }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; color: #6b4327; }
+        header p { margin: 12px 0 0 0; color: #8b6842; font-size: 1.18em; }
+        nav { background-color: #6b4327; padding: 13px 0; text-align: center; }
+        nav a { color: #fffbe7; text-decoration: none; padding: 13px 30px; font-weight: bold; border-radius: 5px; transition: background 0.2s; }
+        nav a:hover { background-color: #b08a5c; }
+        .content-section { padding: 38px 20px; max-width: 860px; margin: auto; background: #fffbe7; border-radius: 12px; box-shadow: 0 2px 10px rgba(107,67,39,0.08);}
+        .menu-item { margin-bottom: 22px; }
+        .menu-item h3 { margin: 0; font-size: 1.15em; color: #6b4327; }
+        .menu-item p { margin: 6px 0 0; color: #8b6842; }
+        .embed-container { margin: 28px 0; }
+        .embed-container iframe, .embed-container img { border-radius: 8px; }
+        ul { color: #6b4327; }
+        footer { text-align: center; padding: 22px; background-color: #6b4327; color: #fffbe7; margin-top: 50px; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sigay Cafe</h1>
+        <p>Where every visit feels like home and every bite is a treat.</p>
+    </header>
+
+    <nav>
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#why-choose-us">Why Sigay?</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content-section" id="about">
+        <h2>About Sigay Cafe</h2>
+        <p>Sigay Cafe was founded from a passion for sharing good food and warm company. We wanted to create a space where friends and families could gather, relax, and enjoy delicious coffee and fresh bakes. Every visit is a new memory, and every cup is made with care.</p>
+    </div>
+
+    <hr>
+
+    <div class="content-section" id="menu">
+        <h2>Best Sellers</h2>
+        <div class="menu-item">
+            <h3>Classic Coffee</h3>
+            <p>Espresso, Café Latte, Long Black, Cappuccino</p>
+        </div>
+        <div class="menu-item">
+            <h3>House Specials</h3>
+            <p>Spanish Latte, Iced Mocha, Caramel Cream, Hazelnut Bliss</p>
+        </div>
+        <div class="menu-item">
+            <h3>Coolers & Teas</h3>
+            <p>Cold Brew, Matcha Fizz, Honey Lemon Tea</p>
+        </div>
+        <div class="menu-item">
+            <h3>Fresh Breads & Treats</h3>
+            <p>Artisan sourdough, ensaymada, cinnamon rolls, and cheese bread.</p>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="content-section" id="why-choose-us">
+        <h2>Why Choose Sigay Cafe?</h2>
+        <ul>
+            <li>Freshly brewed coffee and homemade breads</li>
+            <li>Friendly, welcoming staff</li>
+            <li>Relaxed and cozy ambiance</li>
+        </ul>
+    </div>
+
+    <hr>
+    
+    <div class="content-section" id="location">
+        <h2>Visit Us & Take a Look Around</h2>
+        <p>Come see us along Maginhawa St, Quezon City. Check the map for directions and watch our short video to get a feel for our space!</p>
+
+        <div class="embed-container">
+            <h3><a href="https://maps.google.com/?q=Maginhawa%20St,%20Quezon%20City" target="_blank">View on Google Maps</a></h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.795998888888!2d121.0454323153606!3d14.64644478977647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d1e0e1e1e1%3A0xabcdefabcdefabcd!2sMaginhawa%20St%2C%20Quezon%20City!5e0!3m2!1sen!2sph!4v1693824000000!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="embed-container">
+            <h3><a href="https://www.youtube.com/watch?v=stcIuUe6pGk" target="_blank">See Our Cafe in Action</a></h3>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/stcIuUe6pGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="embed-container">
+            <img src="https://images.unsplash.com/photo-1509406422903-af9df4c41e49?auto=format&fit=crop&w=800&q=80" alt="Bread at Sigay Cafe" width="100%" style="max-width:600px;display:block;margin:auto;">
+        </div>
+    </div>
+    <hr>
+
+    <div class="content-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Want to reach out or have a question? We’re happy to help!</p>
+        <p><strong>Phone:</strong> 0917-123-4567</p>
+        <p><strong>Email:</strong> hello@sigaycafe.com</p>
+        <p><strong>Address:</strong> Maginhawa St, Quezon City</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Sigay Cafe. Baked fresh daily in Quezon City.</p>
+    </footer>
+
+</body>
+</html>
