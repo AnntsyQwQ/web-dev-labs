@@ -5,3 +5,6 @@ Then sync changes
 Then boom!
 
 Gawa ka rin lagi README for summary!
+
+----------------------------
+DON'T FORGET TO PULL!
