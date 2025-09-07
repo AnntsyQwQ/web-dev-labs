@@ -1,0 +1,23 @@
+.external-box {
+    background: #fbeee6;
+    border: 2px dashed #7b4a19;
+    border-radius: 14px;
+    padding: 22px;
+    margin: 32px auto;
+    max-width: 400px;
+    text-align: center;
+    color: #5a3e1b;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(90,62,27,0.07);
+}
+
+.bottom-left-btn {
+    background: #b07d36;
+    color: #fffbe7;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(90,62,27,0.09);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutie Patootie Anntsy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .internal-box {
+            background: #ffe4c4;
+            border: 2px solid #b07d36;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px auto;
+            max-width: 400px;
+            text-align: center;
+            color: #7b4a19;
+            font-size: 1.2em;
+            box-shadow: 0 2px 8px rgba(90,62,27,0.09);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(90,62,27,0.09);
+        }
+        .caption {
+            text-align: center;
+            color: #5a3e1b;
+            margin-top: 6px;
+            font-size: 0.95em;
+        }
+        
+        .bottom-left-btn {
+            position: fixed;
+            left: 24px;
+            bottom: 24px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    
+<button class="bottom-left-btn" onclick="window.open('for click me button.html', '_blank')">
+    Click Me!
+</button>
+
+    <div class="internal-box">
+        Welcome 
+        <center>Mr. Michael Serrano!</center>
+    </div>
+
+    <div class="external-box">
+        (and welcome anntsy hehe.)
+    </div>
+
+    <h2 style="text-align:center;color:#7b4a19;margin-top:40px;">me & my beloved</h2>
+    <div class="gallery">
+        <div>
+            <img src="https://media.discordapp.net/attachments/1288861378085519392/1387132731812745338/ann.png?ex=68bd21c6&is=68bbd046&hm=35f9e462a97b3a7227bce938e9db4d60b0e513b708f8218934a9702561391e72&=&format=webp&quality=lossless" alt="Cute Cat">
+            <div class="caption">us</div>
+        </div>
+        <div>
+            <img src="https://media.discordapp.net/attachments/1288861378085519392/1413500894347268166/1756824480025.WIN_20250902_18_53_28_Pro.jpg?ex=68bcd18a&is=68bb800a&hm=4fd229e00c8703cadf9b51dd739f7f1635237e8a005fc0af238fe96c4931dacc&=&format=webp" alt="Coffee Cup">
+            <div class="caption">us</div>
+        </div>
+        <div>
+            <img src="https://media.discordapp.net/attachments/1288861378085519392/1413500893424390256/WIN_20250902_18_51_34_Pro.jpg?ex=68bcd18a&is=68bb800a&hm=2fef90e3683c37876b8a383bd75968bda885c3cc784e7c7ee9c551cdf588ea5e&=&format=webp" alt="Bread">
+            <div class="caption">us</div>
+        </div>
+        <div>
+            <img src="https://media.discordapp.net/attachments/1288861378085519392/1387139761462054982/download20250603023735.png?ex=68bd2852&is=68bbd6d2&hm=fdf636f009d4cbb988ba2eb67954a130f6bfd2a7d8d9df1803c566d02e958389&=&format=webp&quality=lossless" alt="Dog">
+            <div class="caption">us</div>
+        </div>
+        <div style="grid-column: 1 / -1; text-align: center;">
+            <h2 style="color:#7b4a19; margin-top:40px;">music i made for my beloved.</h2>
+            <iframe width="98%" height="340" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2039475876&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/tomuberg" title="tomuberg" target="_blank" style="color: #cccccc; text-decoration: none;">tomuberg</a> · 
+                <a href="https://soundcloud.com/tomuberg/sets/before-the-semester-ends" title="before the semester ends." target="_blank" style="color: #cccccc; text-decoration: none;">before the semester ends.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
