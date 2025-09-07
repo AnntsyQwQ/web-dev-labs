@@ -3,138 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Article</title>
+  <title>Your Daily Brew</title>
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: url('https://images.pexels.com/photos/4346325/pexels-photo-4346325.jpeg');
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://m.media-amazon.com/images/I/712u+WUf38L._UF894,1000_QL80_.jpg');
       background-size: cover;
       background-attachment: fixed;
-      color: #fff;
+      color: #f8f0e3;
       margin: 0;
       padding: 0;
     }
 
-   
     body::before {
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(70, 70, 70, 0.6);
+      background: rgba(30, 20, 15, 0.7);
       z-index: -1;
     }
 
- 
     .main-header {
       text-align: center;
-      padding: 60px 20px 80px;
+      padding: 70px 20px 90px;
       position: relative;
     }
     .main-header h1 {
-      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
       font-weight: bold;
-      margin: 0 0 15px;
+      margin: 0 0 20px;
+      color: #e6b87e;
     }
     .main-header p {
-      font-size: 1.3em;
+      font-size: 1.4em;
       margin-bottom: 0;
-      color: #f0e6d2;
+      color: #e0ccb2;
     }
 
-    /* Sections */
     .section-row {
       display: flex;
       flex-wrap: wrap;
       gap: 32px;
       justify-content: center;
-      margin: -40px auto 0 auto;
-      max-width: 1050px;
+      margin: -50px auto 0 auto;
+      max-width: 1100px;
       position: relative;
       z-index: 2;
     }
     .section-card {
-      background: rgba(46,27,18,0.95);
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-      flex: 1 1 320px;
-      min-width: 300px;
-      max-width: 480px;
-      padding: 32px 28px;
+      background: rgba(10, 5, 0, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      flex: 1 1 340px;
+      min-width: 320px;
+      max-width: 500px;
+      padding: 35px 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .section-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
     }
     .section-card h2 {
-      font-size: 1.5em;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7em;
       font-weight: 700;
-      color: #ffcc80;
-      margin-bottom: 14px;
+      color: #ffda9e;
+      margin-bottom: 16px;
     }
     .section-card p {
-      font-size: 1.05em;
-      color: #e0d4c4;
+      font-size: 1.1em;
+      color: #f0e6d2;
       margin-bottom: 0;
+      line-height: 1.6;
     }
 
-    /* Hobbies List */
     .hobbies-list {
-      background: rgba(27,15,10,0.95);
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-      max-width: 600px;
-      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      max-width: 650px;
+      margin: 70px auto;
       text-align: center;
     }
     .hobbies-list h2 {
-      color: #ffcc80;
-      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+      color: #ffda9e;
+      margin-bottom: 25px;
+      font-size: 1.8em;
     }
     .hobbies-list ul {
       list-style: none;
       padding: 0;
     }
     .hobbies-list li {
-      font-size: 1.1em;
-      margin: 10px 0;
-      color: #e0d4c4;
+      font-size: 1.15em;
+      margin: 12px 0;
+      color: #e0ccb2;
     }
 
     @media (max-width: 900px) {
       .section-row {
         flex-direction: column;
-        gap: 24px;
+        gap: 28px;
+      }
+      .main-header h1 {
+        font-size: 2.8em;
+      }
+      .main-header p {
+        font-size: 1.2em;
+      }
+      .section-card {
+        padding: 30px 25px;
+      }
+      .hobbies-list {
+        margin: 50px auto;
       }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="main-header">
-    <h1>Fast Coffee, Not Junk Coffee</h1>
-    <p>Start your day with a cup that’s quick, delicious, and good for you. Less waiting, more living.</p>
+    <h1>Your Daily Dose, Elevated.</h1>
+    <p>Kickstart your day with exquisite coffee that's both swift and satisfying. Experience quality, without the wait, right here in Quezon City.</p>
   </div>
 
   <div class="section-row">
     <div class="section-card">
-      <h2>Freshly Roasted Daily</h2>
-      <p>We source premium beans and roast them every morning to ensure you get the richest flavor and the freshest cup possible.</p>
+      <h2>Artisanal Roasts, Every Morning</h2>
+      <p>We carefully select premium beans and roast them fresh daily, ensuring each cup delivers a rich, aromatic experience that awakens your senses.</p>
     </div>
     <div class="section-card">
-      <h2>No Time for Breakfast?</h2>
-      <p>Enjoy a warm, energizing cup of coffee and a fresh pastry to power up your day. Quick, nutritious, and always satisfying.</p>
+      <h2>Morning Rush? We've Got You.</h2>
+      <p>Grab an invigorating coffee alongside a delightful, freshly baked pastry. It's the perfect quick and nourishing start to your busy day, crafted for convenience.</p>
     </div>
   </div>
 
   <div class="hobbies-list">
-    <h2>Hobbies & Skills of a Coffee Enjoyer</h2>
+    <h2>The Coffee Enthusiast's Journey</h2>
     <ul>
-      <li>Home brewing and experimenting with coffee recipes</li>
-      <li>Visiting local coffee shops and exploring new blends</li>
-      <li>Pairing coffee with pastries and baked goods</li>
+      <li>Mastering home brewing techniques and crafting unique coffee blends.</li>
+      <li>Exploring Quezon City's vibrant coffee scene and discovering new cafes.</li>
+      <li>The delightful art of pairing coffee with delectable local treats.</li>
     </ul>
   </div>
 </body>
