@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Gallery – Frequently Asked Questions</title>
+    <meta name="description" content="Find answers to common questions about film photography, our gallery, and the technical aspects of analog image creation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .faq-item {
+            border-bottom: 1px solid #333;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        .faq-question:hover {
+            color: #fbbf24;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="relative">
+    <div class="film-grain"></div>
+    
+    <header class="bg-black py-6 px-4 sticky top-0 z-50 shadow-lg">
+        <h1 class="font-cinzel text-3xl md:text-4xl text-center text-yellow-500 tracking-widest flicker">FILM GALLERY</h1>
+        <nav class="flex flex-wrap justify-center gap-4 mt-4">
+            <a href="../index.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Home</a>
+            <a href="portrait.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Portrait</a>
+            <a href="landscape.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Landscape</a>
+            <a href="street.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Street</a>
+            <a href="fashion.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Fashion</a>
+            <a href="architecture.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Architecture</a>
+            <a href="film.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Film</a>
+            <a href="about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+            <a href="FAQ.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">FAQ</a>
+            <a href="contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+        </nav>
+    </header>
+
+    <main class="min-h-screen py-12 px-4">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center mb-8 text-yellow-400 tracking-wider">FREQUENTLY ASKED QUESTIONS</h2>
+            
+            <article class="bg-black bg-opacity-70 p-8 rounded-sm mb-8">
+                <p class="text-lg mb-6 text-center">Find answers to common questions about film photography and our gallery. Click on any question to reveal the answer.</p>
+                
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="text-xl font-semibold">What makes film photography different from digital?</h3>
+                            <i data-feather="chevron-down" class="faq-icon text-yellow-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="mb-4">Film photography differs from digital in several fundamental ways. Film captures images through a chemical process on light-sensitive emulsion, while digital uses electronic sensors. This results in different characteristics: film has a natural grain structure, wider dynamic range, and unique color rendition that varies by film stock.</p>
+                            <p>Digital offers immediate results and unlimited shots, but film requires careful planning and technical knowledge. Each film type (color negative, slide film, black and white) has its own personality and responds differently to light conditions. Many photographers appreciate film for its tactile process and the surprises that can emerge during development.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="text-xl font-semibold">How do I choose the right film stock for my photography?</h3>
+                            <i data-feather="chevron-down" class="faq-icon text-yellow-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="mb-4">Choosing the right film stock depends on several factors including lighting conditions, desired aesthetic, and subject matter. For beginners, we recommend starting with ISO 400 film as it's versatile enough for most daylight situations.</p>
+                            <p class="mb-4">Color negative films like Kodak Portra are excellent for portrait and fashion work due to their fine grain and natural skin tones. Fujifilm Provia is ideal for landscape photography with its vibrant colors and high sharpness. Black and white films like Ilford HP5 offer classic contrast and are forgiving with exposure variations.</p>
+                            <p>Consider the film's ISO rating (light sensitivity), grain characteristics, and color palette. Experimentation is key - many photographers develop preferences through trying different stocks in various conditions.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="text-xl font-semibold">Can I submit my film photographs to your gallery?</h3>
+                            <i data-feather="chevron-down" class="faq-icon text-yellow-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="mb-4">Yes, we welcome submissions from film photographers at all levels. We're always looking for fresh perspectives and unique approaches to analog photography. Our selection process focuses on technical quality, artistic vision, and how well the work represents the film medium.</p>
+                            <p class="mb-4">To submit your work, please use our contact form and include a brief portfolio of 5-10 images. All submissions must be shot entirely on film (no digital simulations) and should include technical details such as camera, lens, film stock, and development process.</p>
+                            <p>We review submissions monthly and respond to all applicants within 4-6 weeks. Selected photographers will be featured in our online gallery and considered for future physical exhibitions.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="text-xl font-semibold">What's the advantage of shooting medium format vs 35mm?</h3>
+                            <i data-feather="chevron-down" class="faq-icon text-yellow-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="mb-4">Medium format photography (using 120mm film) offers several advantages over 35mm. The larger film area captures significantly more detail and provides better image quality, especially noticeable in large prints. Medium format cameras typically have larger negatives - common sizes include 6x4.5cm, 6x6cm, and 6x7cm compared to 35mm's 24x36mm.</p>
+                            <p class="mb-4">The larger negative size means less enlargement is needed for prints, resulting in finer grain and sharper images. Medium format also provides different aspect ratios and a unique look to the out-of-focus areas (bokeh). However, medium format cameras are generally larger, heavier, and more expensive than 35mm counterparts.</p>
+                            <p>Many professional photographers choose medium format for commercial work, portraits, and landscapes where maximum image quality is essential, while 35mm remains popular for street photography and situations requiring portability.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="text-xl font-semibold">How do you scan film photographs for digital display?</h3>
+                            <i data-feather="chevron-down" class="faq-icon text-yellow-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="mb-4">We use professional-grade film scanners to digitize our film photographs while preserving the unique characteristics of each image. Our scanning process involves several careful steps to ensure quality results.</p>
+                            <p class="mb-4">We scan at high resolutions (typically 4000 dpi for 35mm and 3200 dpi for medium format) to capture all the detail present in the film. Each scan is done in RAW format to retain maximum information. We perform minimal color correction and dust removal, being careful not to alter the essential character of the film.</p>
+                            <p>The goal is to create digital files that faithfully represent what the film captured, not to "improve" or dramatically alter the image. We believe the film's inherent qualities - including grain, color shifts, and contrast - are part of its artistic value and should be preserved in the digital version.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-black py-8 px-4 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="instagram"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="twitter"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="youtube"></i></a>
+        </div>
+        <p>&copy; 2025 FILM GALLERY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = question.nextElementSibling;
+                
+                // Toggle active class
+                faqItem.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Gallery – Contact Us</title>
+    <meta name="description" content="Get in touch with Film Gallery for submissions, questions, or collaboration opportunities. We welcome inquiries from photographers and film enthusiasts.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid #444;
+            color: white;
+            border-radius: 4px;
+        }
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #fbbf24;
+        }
+        .submit-btn {
+            background: #fbbf24;
+            color: black;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #f59e0b;
+        }
+        .success-message {
+            display: none;
+            background: #10b981;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="relative">
+    <div class="film-grain"></div>
+    
+    <header class="bg-black py-6 px-4 sticky top-0 z-50 shadow-lg">
+        <h1 class="font-cinzel text-3xl md:text-4xl text-center text-yellow-500 tracking-widest flicker">FILM GALLERY</h1>
+        <nav class="flex flex-wrap justify-center gap-4 mt-4">
+            <a href="../index.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Home</a>
+            <a href="portrait.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Portrait</a>
+            <a href="landscape.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Landscape</a>
+            <a href="street.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Street</a>
+            <a href="fashion.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Fashion</a>
+            <a href="architecture.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Architecture</a>
+            <a href="film.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Film</a>
+            <a href="about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+            <a href="FAQ.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">FAQ</a>
+            <a href="contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+        </nav>
+    </header>
+
+    <main class="min-h-screen py-12 px-4">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center mb-8 text-yellow-400 tracking-wider">CONTACT US</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="bg-black bg-opacity-70 p-8 rounded-sm">
+                    <h3 class="text-2xl font-cinzel mb-6 text-yellow-300">Get In Touch</h3>
+                    <p class="mb-6">We welcome inquiries from photographers, collectors, and film enthusiasts. Whether you're interested in submitting work, purchasing prints, or collaborating on projects, we'd love to hear from you.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="text-yellow-400 mr-4"></i>
+                            <span>contact@filmgallery.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="text-yellow-400 mr-4"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="text-yellow-400 mr-4"></i>
+                            <span>123 Film Street, Camera City, CA 90210</span>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-cinzel mt-8 mb-4 text-yellow-300">Response Time</h4>
+                    <p>We typically respond to all inquiries within 2-3 business days. For portfolio submissions, please allow 4-6 weeks for review as we carefully consider each submission.</p>
+                </article>
+
+                <article class="bg-black bg-opacity-70 p-8 rounded-sm">
+                    <h3 class="text-2xl font-cinzel mb-6 text-yellow-300">Send a Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <select id="subject" class="form-input" required>
+                                <option value="">Select a subject</option>
+                                <option value="submission">Portfolio Submission</option>
+                                <option value="print">Print Purchase</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="technical">Technical Question</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" rows="5" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        
+                        <div id="successMessage" class="success-message">
+                            Thank you for your message! We'll get back to you soon.
+                        </div>
+                    </form>
+                </article>
+            </div>
+
+            <!-- Embedded Map -->
+            <div class="mt-12 bg-black bg-opacity-70 p-8 rounded-sm">
+                <h3 class="text-2xl font-cinzel mb-6 text-yellow-300 text-center">Visit Our Gallery</h3>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-74.00594938459426!3d40.71278427933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2e6c23f3f1%3A0xce3b1a5d9b0f0b1e!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-sm">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-8 px-4 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="instagram"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="twitter"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300"><i data-feather="youtube"></i></a>
+        </div>
+        <p>&copy; 2025 FILM GALLERY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
