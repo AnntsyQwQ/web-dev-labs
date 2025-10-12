@@ -21,3 +21,6 @@ Open mo lang github acc mo sa VScode then pull mo sa source control.
 
 NOTE: Balikan ang Lab 5 and 6 at ayusin ang mga activity. May activity
 sa module 7 na need ilagay sa Lab 6
+
+Dami pala need balikan... pag nabalik yung module gawin lahat ng missing
+sa bawat lab.
