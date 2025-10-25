@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Form</title>
+</head>
+<body>
+    <h1>Welcome to Our Service</h1>
+    
+    <label for="name">Lapag mo pangalan mo:</label>
+    <input type="text" id="name" placeholder="Ang iyong ngalan?">
+    <button onclick="pagbati()">Submit</button>
+    
+    <script>
+        function pagbati() {
+            const name = document.getElementById('name').value || 'Guest';
+            alert(`Thank you, ${name}!`);
+        }
+    </script>
+</body>
+</html>
