@@ -60,7 +60,7 @@ header {
     }
 }
 
- .order-btn {
+.order-btn {
     background-color: #8b8b8b;
     color: white;
     border: none;
@@ -104,4 +104,26 @@ header {
     font-size: 1.2em;
     color: #6a3e21;
     margin-top: 10px;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+}
+
+.category-title {
+    color: #7c540b;
+    border-bottom: 2px solid #7c540b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }

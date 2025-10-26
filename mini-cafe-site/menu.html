@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
     <link rel="stylesheet" href="menu-style.css">
-   
 </head>
 <body>
 
@@ -13,54 +12,9 @@
         <h1>Our Menu</h1>
     </header>
 
-    <div class="menu-container">
-        <div class="menu-category">
-            <h2>Coffee</h2>
-            <div class="menu-item">
-                <h3>Cold Brew</h3>
-                <p>A smooth, full-bodied coffee concentrate brewed in cold water.</p>
-                <span class="price">$4.50</span>
-                <button class="order-btn" onclick="orderItem('Cold Brew', 4.50)">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <h3>Caramel Macchiato</h3>
-                <p>Espresso with steamed milk, vanilla syrup, and a caramel drizzle.</p>
-                <span class="price">$5.25</span>
-                <button class="order-btn" onclick="orderItem('Caramel Macchiato', 5.25)">Order Now</button>
-            </div>
-        </div>
-
-        <div class="menu-category">
-            <h2>Tea</h2>
-            <div class="menu-item">
-                <h3>Earl Grey</h3>
-                <p>Black tea with a distinctive bergamot orange flavor.</p>
-                <span class="price">$3.25</span>
-                <button class="order-btn" onclick="orderItem('Earl Grey', 3.25)">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <h3>Iced Peach Tea</h3>
-                <p>Refreshing black tea with natural peach flavor.</p>
-                <span class="price">$3.75</span>
-                <button class="order-btn" onclick="orderItem('Iced Peach Tea', 3.75)">Order Now</button>
-            </div>
-        </div>
-
-        <div class="menu-category">
-            <h2>Pastries</h2>
-            <div class="menu-item">
-                <h3>Blueberry Muffin</h3>
-                <p>A soft, moist muffin packed with blueberries.</p>
-                <span class="price">$2.75</span>
-                <button class="order-btn" onclick="orderItem('Blueberry Muffin', 2.75)">Order Now</button>
-            </div>
-            <div class="menu-item">
-                <h3>Almond Croissant</h3>
-                <p>A flaky pastry filled with sweet almond paste.</p>
-                <span class="price">$3.50</span>
-                <button class="order-btn" onclick="orderItem('Almond Croissant', 3.50)">Order Now</button>
-            </div>
-        </div>
+    <!-- Dynamic Menu Container -->
+    <div class="menu-container" id="menu-list">
+        <!-- Menu items will be dynamically generated here -->
     </div>
 
     <!-- Order Summary Section -->
@@ -70,59 +24,15 @@
             <li>No items ordered yet</li>
         </ul>
         <div class="total-price" id="total-price">Total: $0.00</div>
+        <button class="clear-btn" onclick="clearOrder()">Clear Order</button>
     </div>
 
+    <script src="script.js"></script>
     <script>
-        let orders = [];
-        let total = 0;
-        
-        function orderItem(itemName, price) {
-            // Show alert
-            alert(`You ordered ${itemName}!`);
-            
-            // Add item to orders array
-            orders.push({
-                name: itemName,
-                price: price
-            });
-            
-            // Update total
-            total += price;
-            
-            // Update the order summary display
-            updateOrderSummary();
-        }
-        
-        function updateOrderSummary() {
-            const orderList = document.getElementById('order-list');
-            const totalPrice = document.getElementById('total-price');
-            
-            // Clear the order list
-            orderList.innerHTML = '';
-            
-            if (orders.length === 0) {
-                orderList.innerHTML = '<li>No items ordered yet</li>';
-            } else {
-                // Add each order to the list
-                orders.forEach((order, index) => {
-                    const li = document.createElement('li');
-                    li.textContent = `${order.name} - $${order.price.toFixed(2)}`;
-                    orderList.appendChild(li);
-                });
-            }
-            
-            // Update total price
-            totalPrice.textContent = `Total: $${total.toFixed(2)}`;
-        }
-        
-        // Optional: Add function to clear order
-        function clearOrder() {
-            orders = [];
-            total = 0;
-            updateOrderSummary();
-            alert('Order cleared!');
-        }
+        // Initialize dynamic menu when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createDynamicMenu();
+        });
     </script>
-
 </body>
 </html>
