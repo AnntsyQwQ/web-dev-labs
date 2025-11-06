@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Gallery – Contact Us</title>
+    <meta name="description" content="Get in touch with Film Gallery for submissions, questions, or collaboration opportunities. We welcome inquiries from photographers and film enthusiasts.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="relative">
+    <div class="film-grain"></div>
+    
+    <header class="bg-black sticky-top shadow-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid d-flex flex-column">
+                <a class="navbar-brand font-cinzel text-3xl md:text-4xl text-yellow-500 tracking-widest flicker" href="../index.html">FILM GALLERY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portrait.html">Portrait</a></li>
+                        <li class="nav-item"><a class="nav-link" href="landscape.html">Landscape</a></li>
+                        <li class="nav-item"><a class="nav-link" href="street.html">Street</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fashion.html">Fashion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
+                        <li class="nav-item"><a class="nav-link" href="film.html">Film</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <section class="container-lg">
+            <h2 class="display-4 font-cinzel text-center mb-5 text-yellow-400 tracking-wider">CONTACT US</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="about-box h-100">
+                        <h3 class="fs-4 font-cinzel mb-4 text-yellow-300">Get In Touch</h3>
+                        <p class="mb-4">We welcome inquiries from photographers, collectors, and film enthusiasts. Whether you're interested in submitting work, purchasing prints, or collaborating on projects, we'd love to hear from you.</p>
+                        
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center">
+                                <i data-feather="mail" class="text-yellow-400 me-3"></i>
+                                <span>contact@filmgallery.com</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i data-feather="phone" class="text-yellow-400 me-3"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i data-feather="map-pin" class="text-yellow-400 me-3"></i>
+                                <span>123 Film Street, Camera City, CA 90210</span>
+                            </div>
+                        </div>
+
+                        <h4 class="fs-5 font-cinzel mt-5 mb-3 text-yellow-300">Response Time</h4>
+                        <p>We typically respond to all inquiries within 2-3 business days. For portfolio submissions, please allow 4-6 weeks for review as we carefully consider each submission.</p>
+                    </article>
+                </div>
+
+                <div class="col-md-6">
+                    <article class="about-box h-100">
+                        <h3 class="fs-4 font-cinzel mb-4 text-yellow-300">Send a Message</h3>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label class_alias="form-label" for="name">Full Name</label>
+                                <input type="text" id="name" class_alias="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class_alias="form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class_alias="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class_alias="form-label" for="subject">Subject</label>
+                                <select id="subject" class_alias="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="submission">Portfolio Submission</option>
+                                    <option value="print">Print Purchase</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="technical">Technical Question</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class_alias="form-label" for="message">Message</label>
+                                <textarea id="message" rows="5" class_alias="form-textarea" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            
+                            <div id="successMessage" style="display: none; background: #10b981; color: white; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                                Thank you for your message! We'll get back to you soon.
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mt-5 about-box">
+                <h3 class="fs-4 font-cinzel mb-4 text-yellow-300 text-center">Visit Our Gallery</h3>
+                <div class="w-100" style="aspect-ratio: 16 / 9;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-74.00594938459426!3d40.71278427933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2e6c23f3f1%3A0xce3b1a5d9b0f0b1e!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-sm">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-5 px-4 text-center text-gray-500 small">
+        <div class="d-flex justify-content-center gap-4 mb-4 footer-links">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="youtube"></i></a>
+        </div>
+        <p>&copy; 2025 FILM GALLERY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        feather.replace();
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                document.getElementById('successMessage').style.display = 'block';
+                this.reset();
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
